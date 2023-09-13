@@ -1,7 +1,8 @@
 const getFilms = require('./getFilmsHandler');
 const postFilm = require('./createFilmHandler');
+const catchedAsync = require('../utils/catchedAsync');
 
 module.exports = {
-  getFilms,
-  postFilm,
+  getFilms: catchedAsync(getFilms),
+  postFilm: catchedAsync(postFilm),
 };
