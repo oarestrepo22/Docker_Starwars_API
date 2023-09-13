@@ -1,8 +1,9 @@
 const controllers = require('../controllers');
+const { response } = require('../utils');
 
 const getFilmsHandler = async (req, res) => {
-  const result = await controllers.getFilms;
-  res.status(200).json(result);
+  const data = await controllers.getFilms;
+  response(res, 200, data);
 };
 
 module.exports = getFilmsHandler;
