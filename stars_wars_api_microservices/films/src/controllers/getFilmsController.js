@@ -5,4 +5,4 @@ const getFilms = () => {
   return films;
 };
 
-module.exports = getFilms();
+module.exports = getFilms;
