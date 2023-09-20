@@ -1,2 +1,2 @@
-POST http://localhost:8001/
+POST http://localhost:8001/characters
 Content-Type: application/json

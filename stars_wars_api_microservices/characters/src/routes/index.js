@@ -3,8 +3,8 @@ const handlers = require('../handlers');
 
 const router = Router();
 
-router.get('/', handlers.getCharacters);
+router.get('/characters', handlers.getCharacters);
 
-router.post('/', handlers.postCharacter);
+router.post('/characters', handlers.postCharacter);
 
 module.exports = router;
