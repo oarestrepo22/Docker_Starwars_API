@@ -6,6 +6,6 @@ module.exports = {
   },
 
   create: async () => {
-    throw Error('Error al crear el personaje');
+    throw Error('Error creating film');
   },
 };

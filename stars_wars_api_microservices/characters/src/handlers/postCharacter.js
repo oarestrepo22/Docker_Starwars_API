@@ -1,11 +1,9 @@
-const controllers = require('../controllers/index');
+const controllers = require('../controllers');
 const { response } = require('../utils');
 
 const postCharacter = async (req, res) => {
-  const result = await controllers.createCharacter;
-  console.log(result);
-
-  response(res, 200, result);
+  const result = await controllers.createCharacter();
+  response(res, 201, result);
 };
 
 module.exports = postCharacter;
