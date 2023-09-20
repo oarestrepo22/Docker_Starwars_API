@@ -1,7 +1,8 @@
 const getCharacters = require('./getCharacters');
 const postCharacter = require('./postCharacter');
+const { catchedAsync } = require('../utils/index');
 
 module.exports = {
-  getCharacters,
-  postCharacter,
+  getCharacters: catchedAsync(getCharacters),
+  postCharacter: catchedAsync(postCharacter),
 };
