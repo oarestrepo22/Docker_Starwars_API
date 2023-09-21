@@ -1,0 +1,2 @@
+POST http://localhost:8003/planets
+Content-Type: application/json
