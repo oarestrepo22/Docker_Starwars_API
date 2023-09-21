@@ -1,3 +1,4 @@
 const getPlanets = require('./getPlanets');
+const postPlanet = require('./postPlanet');
 
-module.exports = { getPlanets };
+module.exports = { getPlanets, postPlanet };
