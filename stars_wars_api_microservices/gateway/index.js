@@ -7,7 +7,7 @@ const app = express();
 app.use(morgan('dev'));
 //app.use(express.json())
 
-app.use('/characters', createProxy('8001'));
+app.use('/characters', createProxy(8001));
 
 app.use('/films', createProxy(8002));
 
