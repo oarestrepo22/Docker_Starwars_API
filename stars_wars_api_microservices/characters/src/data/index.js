@@ -6,6 +6,6 @@ module.exports = {
   },
 
   create: async () => {
-    throw Error('Error creating character');
+    throw Error('Error creating character on DB ');
   },
 };
