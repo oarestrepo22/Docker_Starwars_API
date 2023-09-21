@@ -1,12 +1,10 @@
 const controllers = require('../controllers');
+const { response } = require('../utils');
 
 const getPlanets = async (req, res) => {
   const planets = await controllers.getPlanetsFromDb();
 
-  res.status(200).json({
-    error: false,
-    planets,
-  });
+  response(res, 200, planets);
 };
 
 module.exports = getPlanets;
