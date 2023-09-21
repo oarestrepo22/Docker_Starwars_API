@@ -1,8 +1,7 @@
 const controllers = require('../controllers');
+const { response } = require('../utils');
 
 module.exports = async (req, res) => {
   const result = await controllers.getCharacters();
-  //console.log(result);
-
-  res.status(200).json(result);
+  response(res, 200, result);
 };

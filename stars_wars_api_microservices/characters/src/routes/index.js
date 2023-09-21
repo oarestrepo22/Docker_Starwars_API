@@ -1,10 +1,15 @@
 const { Router } = require('express');
 const handlers = require('../handlers');
+const middlewares = require('../middlewares');
 
 const router = Router();
 
-router.get('/', handlers.getCharacters);
+router.get('/characters', handlers.getCharacters);
 
-router.post('/', handlers.postCharacter);
+router.post(
+  '/characters',
+  middlewares.characterValidator,
+  handlers.postCharacter
+);
 
 module.exports = router;
