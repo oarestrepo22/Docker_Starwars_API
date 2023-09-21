@@ -13,4 +13,7 @@ server.use(routes);
 // si no encuentra la ruta entonces devuelve una respuesta 'not found'
 server.use(utils.notFoundEndpoint);
 
+// manejador de errores Express modificado
+server.use(utils.expressErrorHandler);
+
 module.exports = server;
