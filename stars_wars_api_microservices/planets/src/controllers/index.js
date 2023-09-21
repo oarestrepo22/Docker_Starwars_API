@@ -1,3 +1,4 @@
 const getPlanetsFromDb = require('./getPlanetsFromDb');
+const createPlanetOnDb = require('./createPlanetOnDb');
 
-module.exports = { getPlanetsFromDb };
+module.exports = { getPlanetsFromDb, createPlanetOnDb };
