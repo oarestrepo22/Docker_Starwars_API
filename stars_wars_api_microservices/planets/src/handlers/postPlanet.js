@@ -1,8 +1,9 @@
 const controllers = require('../controllers');
+const { response } = require('../utils');
 
 const postPlanet = async (req, res) => {
   const result = await controllers.createPlanetOnDb();
-  res.status(201).send(result);
+  response(res, 201, result);
 };
 
 module.exports = postPlanet;

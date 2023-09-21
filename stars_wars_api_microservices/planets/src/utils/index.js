@@ -1,3 +1,4 @@
 const response = require('./response');
+const notFoundEndpoint = require('./notFoundEndpoint');
 
-module.exports = { response };
+module.exports = { response, notFoundEndpoint };
