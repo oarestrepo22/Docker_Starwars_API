@@ -1,2 +1,2 @@
-POST http://localhost:8002/
+POST http://localhost:8002/films
 Content-Type: application/json
