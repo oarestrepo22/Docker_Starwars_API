@@ -1,8 +1,8 @@
 const { createProxyMiddleware } = require('http-proxy-middleware');
 
-const createProxy = (localHost) => {
+const createProxy = (containerName, containerPort) => {
   return createProxyMiddleware({
-    target: `http://localhost:${localHost}`,
+    target: `http://${containerName}:${containerPort}`,
     changeOrigin: true,
   });
 };
