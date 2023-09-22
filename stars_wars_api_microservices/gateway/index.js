@@ -1,6 +1,6 @@
 const express = require('express');
 const morgan = require('morgan');
-const { createProxy } = require('./src/utils');
+const { createProxy } = require('./utils');
 const PORT = 8000;
 
 const app = express();
