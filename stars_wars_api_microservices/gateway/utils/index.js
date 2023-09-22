@@ -1,3 +1,7 @@
 const createProxy = require('./createProxy');
+const notFoundEndpoint = require('./notFoundEndpoint');
 
-module.exports = { createProxy };
+module.exports = {
+  createProxy,
+  notFoundEndpoint,
+};
